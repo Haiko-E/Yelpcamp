@@ -46,7 +46,6 @@ module.exports.createCampground = async (req, res, next) => {
 
     const data = req.body;
     const pictures = req.files;
-
     await campgroundSchema.validateAsync(data);
     const camp = new Campground(data);
     camp.geometry = geodata.body.features[0].geometry;
