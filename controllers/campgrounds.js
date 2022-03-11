@@ -51,7 +51,7 @@ module.exports.createCampground = async (req, res, next) => {
     console.log(pictures);
     await campgroundSchema.validateAsync(data);
     const camp = new Campground(data);
-    camp.geoLocation = geodata.body.features[0].geometry;
+    camp.geometry = geodata.body.features[0].geometry;
     camp.image.push(...pictures);
     camp.author = req.user._id;
     await camp.save();
