@@ -27,7 +27,6 @@ module.exports.showLoginForm = async (req, res, next) => {
 
 module.exports.loginUser = async (req, res, next) => {
   try {
-    console.log(req.body);
     const redirectUrl = req.session.lastURL || '/campgrounds';
     delete req.session.lastURL;
     res.redirect(redirectUrl);
