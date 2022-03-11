@@ -85,7 +85,7 @@ app.use('/', userRoute);
 
 //ROUTES
 app.get('/', (req, res) => {
-  res.render('Home.ejs');
+  res.render('home.ejs');
 });
 
 app.use((err, req, res, next) => {
