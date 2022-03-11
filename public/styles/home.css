@@ -1,0 +1,62 @@
+body {
+  background-image: linear-gradient(
+      90deg,
+      rgba(23, 23, 24, 0.5) 0%,
+      rgba(52, 52, 57, 0.3) 17%,
+      rgba(34, 35, 36, 0.5) 100%
+    ),
+    url('https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 60vw;
+  height: fit-content;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 60vw;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link {
+  padding: 0.25rem 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.active {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: none;
+}
+.navbar-brand:hover {
+  text-transform: none;
+  color: white;
+}

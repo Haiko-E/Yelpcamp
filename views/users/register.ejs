@@ -1,0 +1,44 @@
+<% layout('boilerplate/boilerplate') -%>
+
+<div class="card mx-auto" style="width: 30rem">
+  <img
+    src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+    class="card-img-top"
+    alt="card top"
+  />
+  <div class="card-header">
+    <h3>Register</h3>
+  </div>
+  <div class="card-body">
+    <form class="needs-validation" method="POST" action="/register" novalidate>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          name="username"
+          autofocus
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          required
+        />
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-success">Register</button>
+      </div>
+    </form>
+  </div>
+</div>
