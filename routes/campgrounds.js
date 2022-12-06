@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { isLoggedin, isCampgroundAuthor } = require('../middleware');
+const { isLoggedin, isCampgroundAuthor } = require('../middle');
 const {
   deleteCampground,
   updateCampground,

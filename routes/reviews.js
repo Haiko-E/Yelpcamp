@@ -1,7 +1,7 @@
 const express = require('express');
 const { createReview, deleteReview } = require('../controllers/reviews');
 const router = express.Router({ mergeParams: true });
-const { isLoggedin, isReviewAuthor } = require('../middleware');
+const { isLoggedin, isReviewAuthor } = require('../middle');
 
 router.delete('/:reviewId', isLoggedin, isReviewAuthor, deleteReview);
 
